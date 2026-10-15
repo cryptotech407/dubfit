@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dubfit"
+version = "0.1.0"
+description = "Fit dubbed narration to a video scene by scene, capping speed and carrying drift so timing never slides."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ed Nunez", email = "cryptotech407@users.noreply.github.com" }]
+keywords = ["dubbing", "localization", "ffmpeg", "atempo", "subtitles", "video", "i18n"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Sound/Audio",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+dubfit = "dubfit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/cryptotech407/dubfit"
+
+[tool.setuptools]
+packages = ["dubfit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
