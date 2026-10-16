@@ -1,5 +1,10 @@
 # dubfit
 
+[![PyPI](https://img.shields.io/pypi/v/dubfit.svg)](https://pypi.org/project/dubfit/)
+[![Python](https://img.shields.io/pypi/pyversions/dubfit.svg)](https://pypi.org/project/dubfit/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/cryptotech407/dubfit/actions/workflows/publish.yml/badge.svg)](https://github.com/cryptotech407/dubfit/actions/workflows/publish.yml)
+
 **Fit dubbed narration to a video scene by scene** — capping the speed change and carrying
 the residual drift forward, so timing never slides and no scene is ever squeezed into
 sounding rushed.
