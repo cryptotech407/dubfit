@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,15 +8,21 @@ version = "0.1.0"
 description = "Fit dubbed narration to a video scene by scene, capping speed and carrying drift so timing never slides."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Ed Nunez", email = "cryptotech407@users.noreply.github.com" }]
-keywords = ["dubbing", "localization", "ffmpeg", "atempo", "subtitles", "video", "i18n"]
+keywords = ["dubbing", "localization", "ffmpeg", "atempo", "subtitles", "video", "i18n", "narration"]
 classifiers = [
   "Development Status :: 3 - Alpha",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Topic :: Multimedia :: Sound/Audio",
   "Topic :: Multimedia :: Video",
+  "Topic :: Multimedia :: Video :: Non-Linear Editor",
+  "Typing :: Typed",
 ]
 dependencies = []
 
@@ -28,6 +34,9 @@ dubfit = "dubfit.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/cryptotech407/dubfit"
+Repository = "https://github.com/cryptotech407/dubfit"
+Issues = "https://github.com/cryptotech407/dubfit/issues"
+Changelog = "https://github.com/cryptotech407/dubfit/releases"
 
 [tool.setuptools]
 packages = ["dubfit"]
